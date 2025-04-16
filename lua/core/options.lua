@@ -12,3 +12,11 @@ vim.opt.relativenumber = true
   --highlight NonText ctermbg=none
 --]]
 
+-- Navigate vim panes with Ctrl + hjkl
+vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
+vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
+vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
+vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
+
+-- Close vim panes with Ctrl + q
+vim.keymap.set('n', '<c-d>', ':q<CR>')
